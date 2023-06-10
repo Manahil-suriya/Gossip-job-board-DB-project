@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job listings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="shitcut icon" href="CSS/icons/logo.png">
+</head>
+<body>
+ <div class="container-fluid overflow-hidden text-center ">
+    <div class="row ">
+      <div class="col-12 col-md-12 col-lg-12 nav-bar fixed-top">
+        <div class="items-1">
+          <h5> <i class="bi bi-telephone-outbound"></i>+123 98645830<i class="bi bi-geo-alt-fill"></i> Colony, Street 42, House # 121 <i class="bi bi-envelope-fill"></i> manahilsuriya23@gmail.com</h5>
+      </div> 
+      <div>
+        <img class="nav-image" src="CSS/icons/logo.png" alt="manahil" >
+        <a href="index.html" title="home">Home</a>
+        <a href="Job Listings.html" title="Job Listings">Job Listings</a>
+        <a href="Social Media.html" title="Social Media:">Social Media</a>
+        <a href="Quit Stories.html" title="Quit Stories">Quit Stories</a>
+        <a href="Sign Up.html" title="Sign Up/Log In">Sign Up</a>
+      </div>
+              
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid overflow-hidden text-center for-pos ">
+       
+    <div class="row back">
+      <div class="col-12 col-md-12 col-lg-12 me">
+        <img src="CSS/images/job listing.jpg">
+      </div>
+      <div class="col-12 col-md-8 col-lg-12 pos1 pos_1">
+        
+        <h1>JOB LISTINGS</h1>
+        <p>Explore the latest job opportunities across various industries</p>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="mid">
+    <h1>Opportunities</h1>
+    <p>Our job listings encompass a wide range of positions, from entry-level to senior roles. Each job listing provides comprehensive details about the position, including the job title, description, qualifications, salary, location, company name, and the date it was posted. Start your journey towards a fulfilling career by 
+      discovering and applying to the job listings that align with your interests and aspirations.</p>
+    
+
+  </div>
+<!-- Job Listing Page -->
+
+<div class="container-fluid con-design">
+  <div class="row ">
+    <div class="col-3 design-1" >
+      <img src="css/images/title.png" alt="title">
+      <h3>Title</h3>
+      <p> Sales Representative</p>
+    </div>
+  
+    <div class="col-3 design-1" >
+      <img src="css/images/description.png" alt="title">
+      <h3>Description</h3>
+      <p> Utilize your persuasive skills to build relationships,
+         meet sales targets, and contribute to the growth of a successful sales team.</p>
+    </div>
+    <div class="col-3 design-1" >
+      <img src="css/images/qualification.png" alt="title">
+      <h3>Qualification</h3>
+      <p> Bachelor's degree in Business</p>
+    </div>
+    <div class="col-3 design-1" >
+      <img src="css/images/salary.png" alt="title">
+      <h3>Salary</h3>
+      <p> 30,000</p>
+    </div>
+    <div class="col-3 design-1" >
+      <img src="css/images/loaction.png" alt="title">
+      <h3>location</h3>
+      <p> colony 12 ,block E</p>
+    </div>
+    <div class="col-3 design-1" >
+      <img src="css/images/company.png" alt="title">
+      <h3>Company</h3>
+      <p> Buzy</p>
+    </div>
+    <div class="col-3 design-1" >
+      <img src="css/images/date.png" alt="title">
+      <h3>Posted date</h3>
+      <p> 12-4-23</p>
+    </div>
+  </div>
+</div>
+<div class="mid">
+  <h1>Add Your Own Job</h1>
+  
+</div>
+<style>
+  /* Style for form labels */
+  label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+  /* Style for form input fields */
+
+  input[type="text"],
+  textarea,
+  input[type="date"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+
+  /* Style for form submit button */
+  button[type="submit"] {
+      background-color:#7963e0;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      width:30%;
+      margin-left: 200px;
+      cursor: pointer;
+  }
+
+  /* Style for form submit button on hover */
+  button[type="submit"]:hover {
+  background-color:#b8b7bd;
+
+  }
+</style>
+
+<!-- Add Your Own Job Form -->
+<div class="job_form">
+  <form action="add_job.php" method="POST">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="qualifications">Qualifications:</label>
+    <input type="text" id="qualifications" name="qualifications" required>
+
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="company_name">Company Name:</label>
+    <input type="text" id="company_name" name="company_name" required>
+
+    <label for="posted_date">Posted Date:</label>
+    <input type="date" id="posted_date" name="posted_date" required>
+    <p>Note: First you have to sign in and then fill the form</p>
+    <button type="submit">Submit</button>
+
+
+
+<!-- Job Listings Page -->
+
+</form>
+<p>Want to Delete your Job?</p>
+<!-- Display existing job listings -->
+        <form action="delete_job.php" method="POST" class="job-form">
+            <input type="hidden" name="job_id" value="2">
+            <button type="submit">Delete</button>
+        </form>
+
+</div>
+
+  <div class="container-fluid last_con ">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 last_one text-start">
+        <h2>About</h2>
+        <p>
+          There's a juicy piece of gossip swirling around the office regarding the creation of a new "Gossip Job Board." The buzz is that the platform is designed to not only connect job seekers with exciting opportunities but also allows users to share entertaining stories and gossips from their work experiences. It's the talk of the town, with everyone eager to join the platform and see what amusing tales and juicy tidbits await them in the world of job-related gossip.
+        </p>
+      <div class="anchors-1">
+        <a href="https://www.instagram.com/edit_emend/" title="Insta" ><i class="bi bi-instagram"></i></a>
+        <a href="https://www.behance.net/manahilsuriya?isa0=1" title="Behance"><i class="bi bi-behance"></i></a>
+        <a href="https://www.facebook.com/manahil.suriya" title="Facebook" ><i class="bi bi-facebook"></i></a>
+        
+      </div>
+       
+   
+      </div>
+      <div class="col-md-4 col-lg-4 ">
+        <div class="last_two">
+          
+           <h2 class="heading">Contact</h2><br>
+            <i class="bi bi-telephone-outbound text-start"></i>+123 98645830<br><br>
+            <i class="bi bi-geo-alt-fill text-start "></i>
+           Colony, Street 42, House # 121 
+          <br> <br><i class="bi bi-envelope-fill text-start st"></i>
+          manahilsuriya23@gmail.com
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <div class="last_three">
+            
+          <h2 class="heading">Information</h2><br>
+          <div class="three_a">
+            <a href="Job Listings.html" title="Job Listings"><i class="bi bi-arrow-right"></i> Job Listings</a><br><br>
+            <a href="Social Media.html" title="Social Media"><i class="bi bi-arrow-right"></i> Social Media</a><br><br>
+            <a href="Quit Stories.html" title="Quit Stories"><i class="bi bi-arrow-right"></i>Quit Stories</a><br><br>
+            <a href="Sign Up.html" title="Sign Up/Log In"><i class="bi bi-arrow-right"></i>Sign Up</a><br>
+      
+          </div>
+          
+       </div>
+    </div>
+    
+
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
